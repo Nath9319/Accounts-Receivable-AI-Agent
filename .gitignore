@@ -9,7 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .env
-.lock
+uv.lock
 .md
 main.py
 AccountsReceivable.md

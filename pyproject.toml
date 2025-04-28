@@ -13,6 +13,7 @@ dependencies = [
     "langchain-google-genai>=2.1.3",
     "langchain-google-vertexai>=2.0.21",
     "langgraph>=0.3.34",
+    "langsmith>=0.3.37",
     "pandas>=2.2.3",
     "python-dotenv>=1.1.0",
     "typing>=3.10.0.0",

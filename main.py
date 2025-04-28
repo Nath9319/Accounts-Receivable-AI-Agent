@@ -17,41 +17,6 @@ load_dotenv()
 
 
 # %%
-from langchain.callbacks.base import BaseCallbackHandler
-
-class GeminiLogger(BaseCallbackHandler):
-    """Custom callback handler to log Gemini model interactions"""
-    
-    def __init__(self, verbose=True):
-        """Initialize the logger"""
-        self.verbose = verbose
-        
-    def on_llm_start(self, serialized, prompts, **kwargs):
-        """Log when LLM starts processing"""
-        if self.verbose:
-            print(f"\n{'='*50}")
-            print(f"SENDING PROMPT TO GEMINI:")
-            print(f"{'='*50}")
-            for i, prompt in enumerate(prompts):
-                print(f"{prompt}\n")
-    
-    def on_llm_end(self, response, **kwargs):
-        """Log when LLM completes processing"""
-        if self.verbose:
-            print(f"\n{'='*50}")
-            print(f"RECEIVED RESPONSE FROM GEMINI:")
-            print(f"{'='*50}")
-            print(f"{response.generations[0][0].text}")
-            
-    def on_llm_error(self, error, **kwargs):
-        """Log any errors during LLM processing"""
-        print(f"\n{'='*50}")
-        print(f"ERROR DURING LLM CALL:")
-        print(f"{'='*50}")
-        print(f"Error: {error}")
-
-
-# %%
 # Define state structure
 class ARWorkflowState(TypedDict):
     customer_data: dict
@@ -62,15 +27,11 @@ class ARWorkflowState(TypedDict):
     decision_reason: str
     requires_human: bool
 
-# %%
-# Initialize the logger
-gemini_logger = GeminiLogger()
 
 # Initialize the model with the logger
 model = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash-001", 
     temperature=0,
-    callbacks=[gemini_logger]  # Add logger to callbacks
 )
 
 
@@ -92,6 +53,7 @@ def data_loader(state: ARWorkflowState) -> ARWorkflowState:
         order_df = pd.read_csv("sales_order.csv")
         
         # For testing purposes, use a consistent sample rather than random
+        # This piece of code will be replaced with some realtime data.
         customer_ids = list(set(order_df.Customer_ID.to_list()) & set(customer_df.Customer_ID.to_list()))
         
         if not customer_ids:

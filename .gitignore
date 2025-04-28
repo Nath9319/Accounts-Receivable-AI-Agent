@@ -11,3 +11,8 @@ wheels/
 .env
 .lock
 .md
+main.py
+AccountsReceivable.md
+dataCheck.ipynb
+scrum.md
+steps.md

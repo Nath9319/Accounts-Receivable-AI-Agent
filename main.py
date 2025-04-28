@@ -446,15 +446,5 @@ result = ar_workflow.invoke({
 })
 print("Workflow complete.")
 
-# %%
-for i, v in result.items():
-    if i not in ["customer_data", "order_data", "policy_content"]:
-        print(f"{i}: {v}")
-
-# %%
-print(result["credit_assessment"]["analysis"])
-
-# %%
-
 
 

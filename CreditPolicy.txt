@@ -1,0 +1,79 @@
+# Credit Policy Document
+
+## 1. **Purpose**
+To establish guidelines for evaluating, approving, and monitoring customer credit to minimize bad debts and ensure healthy cash flow.
+
+---
+
+## 2. **Scope**
+This policy applies to all sales on credit to customers across all business units.
+
+---
+
+## 3. **Customer Assessment**
+
+- **Customer Master Data** must be maintained for every credit customer, including:
+  - Legal name, address, contact details
+  - Credit limit, payment terms, outstanding balance, credit score/status
+  - Purchase and payment history
+
+- **Creditworthiness Evaluation:**
+  - Review customer’s credit score (minimum for approval: 600)
+  - Analyze payment history (no overdue invoices > 60 days in past 12 months)
+  - Assess financial stability using internal and external data (e.g., bank loans, turnover)
+  - For new customers, require trade references or bank statements
+
+---
+
+## 4. **Credit Limit Setting**
+
+- **Standard Credit Limits** are set based on:
+  - Customer’s average monthly turnover (typically 1.5x to 3x)
+  - Payment history and credit score
+  - External obligations (e.g., existing bank loans)
+- **Review & Adjustment:**
+  - Credit limits reviewed annually or upon significant change in payment behavior
+  - Temporary increases require written management approval
+
+---
+
+## 5. **Payment Terms**
+
+- **Standard Terms:** Net 30, Net 45, or Net 60 days, as assigned in Customer Master Data
+- **Early Payment Discounts:** May be offered at management’s discretion
+- **Overdue Accounts:** Subject to late payment interest as per contract
+
+---
+
+## 6. **Order Processing & Approval**
+
+- **Sales Orders** must include:
+  - Customer ID, items, quantities, prices, total value, payment terms
+- **Order Approval:**
+  - Verify customer’s available credit (Credit Limit minus Outstanding Balance)
+  - Check for overdue invoices; block new orders if invoices >60 days overdue
+  - Orders exceeding credit limit require finance/management approval
+- **Documentation:** All approvals and exceptions must be documented in the system
+
+---
+
+## 7. **Monitoring & Collection**
+
+- **Aging Analysis:** Review receivables aging weekly (Current, 1-30, 31-60, 61-90, 90+ days)
+- **Collection Actions:**
+  - Automated reminders for invoices 1-30 days overdue
+  - Personal follow-up for 31-60 days overdue
+  - Suspend credit and escalate to management for invoices >60 days overdue
+- **Write-offs:** Only with CFO/management approval after all collection efforts
+
+---
+
+## 8. **Exceptions**
+
+- Any deviation from this policy (e.g., higher limits, extended terms) must be approved in writing by finance management and documented.
+
+---
+
+## 9. **Policy Review**
+
+- This policy is reviewed annually and updated as required by changes in business, market, or regulatory environment.
